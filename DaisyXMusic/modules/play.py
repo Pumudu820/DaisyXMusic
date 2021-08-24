@@ -546,6 +546,9 @@ async def play(_, message: Message):
                     InlineKeyboardButton("Menu ⏯ ", callback_data="menu"),
                 ],
                 [
+                    InlineKeyboardButton(text="💬 Support", url="https://t.me/friendsforlife001")
+                ],
+                [
                     InlineKeyboardButton(text="❌ Close", callback_data="cls")
                 ],
             ]
@@ -597,6 +600,9 @@ async def play(_, message: Message):
                 [
                     InlineKeyboardButton(text="🎬 YouTube", url=f"{url}"),
                     InlineKeyboardButton(text="Download 📥", url=f"{dlurl}"),
+                ],
+                [
+                    InlineKeyboardButton(text="💬 Support", url="https://t.me/friendsforlife001")
                 ],
                 [
                     InlineKeyboardButton(text="❌ Close", callback_data="cls")
@@ -684,6 +690,9 @@ async def play(_, message: Message):
                         InlineKeyboardButton(text="Download 📥", url=f"{dlurl}"),
                     ],
                     [
+                        InlineKeyboardButton(text="💬 Support", url="https://t.me/friendsforlife001")
+                    ],
+                    [
                         InlineKeyboardButton(text="❌ Close", callback_data="cls")
                     ],
                 ]
@@ -724,7 +733,7 @@ async def play(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             reply_markup=keyboard,
-            caption="▶️ **Playing** here the song requested by {} via Youtube Music 😜".format(
+            caption="▶️ **Playing** here the song requested by {} via Rapunzel Music 😝".format(
                 message.from_user.mention()
             ),
         )
@@ -834,6 +843,9 @@ async def ytplay(_, message: Message):
                 InlineKeyboardButton(text="Download 📥", url=f"{dlurl}"),
             ],
             [
+                InlineKeyboardButton(text="💬 Support", url="https://t.me/friendsforlife001")
+            ],
+            [
                 InlineKeyboardButton(text="❌ Close", callback_data="cls")
             ],
         ]
@@ -874,7 +886,7 @@ async def ytplay(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             reply_markup=keyboard,
-            caption="▶️ **Playing** here the song requested by {} via Youtube Music 😜".format(
+            caption="▶️ **Playing** here the song requested by {} via Rapunzel Music 😝".format(
                 message.from_user.mention()
             ),
         )
@@ -1003,6 +1015,9 @@ async def jiosaavn(client: Client, message_: Message):
                 InlineKeyboardButton(text="Join Updates Channel", url=f"https://t.me/{updateschannel}")
             ],
             [
+                InlineKeyboardButton(text="💬 Support", url="https://t.me/friendsforlife001")
+            ],
+            [
                 InlineKeyboardButton(text="❌ Close", callback_data="cls")
             ],
         ]
@@ -1110,6 +1125,9 @@ async def lol_cb(b, cb):
                 InlineKeyboardButton(text="Download 📥", url=f"{dlurl}"),
             ],
             [
+                InlineKeyboardButton(text="💬 Support", url="https://t.me/friendsforlife001")
+            ],
+            [
                 InlineKeyboardButton(text="❌ Close", callback_data="cls")
             ],
         ]
@@ -1153,6 +1171,6 @@ async def lol_cb(b, cb):
         await b.send_photo(chat_id,
             photo="final.png",
             reply_markup=keyboard,
-            caption=f"▶️ **Playing** here the song requested by {r_by.mention} via Youtube Music 😜",
+            caption=f"▶️ **Playing** here the song requested by {r_by.mention} via Rapunzel Music 😝",
         )
         os.remove("final.png")
